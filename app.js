@@ -4,7 +4,7 @@ const express = require("express");
 const cors = require("cors");
 const router = require("./Routes/router");
 const app = express();
-const PORT = 6010;
+const PORT = process.env.PORT || 6010;
 require("./db/conn");
 
 app.use(cors());
